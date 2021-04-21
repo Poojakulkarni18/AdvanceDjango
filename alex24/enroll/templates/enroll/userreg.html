@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.helptext{
+    color:red;
+}
+</style>
+<body>
+<form action="" method="get">
+
+<!-- Static -->
+<!--
+<div>
+<label for="id_name">Name:</label>
+<input type="text" name="name" value="alex" required id="id_name">
+</div>
+    
+       <!-- {{form.name.label_tag}}  {{form.name}} <br>
+        {{form.email.label_tag}}  {{form.email}} <br> -->
+        <!-- Dynamic -->
+       <!-- <div>
+        {{form.name.label_tag}} {{form.name}}
+        {{form.name.value}}
+        {{form.name.field.required}}
+        </div> -->
+      {{form.as_p}} 
+      <!-- {% for field in form.visible_fields %} 
+      {{field.label_tag}} {{field}} <br>
+      {% endfor %} -->
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>
